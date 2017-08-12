@@ -127,7 +127,7 @@ padding: 15px;
 
 
 
-BODYSPCE ----------------------------------------------------------------------------------------------------------------------
+/*BODYSPCE ----------------------------------------------------------------------------------------------------------------------
 
 .bodyspace {
   text-align: center;
@@ -142,11 +142,85 @@ BODYSPCE -----------------------------------------------------------------------
 
 
 
+/*Projectsmenu ----------------------------------------------------------------------------------------------------------------------*/
 
+.list-inline {
+	
+	margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 50px;
+	
 
+	
+}
 
+.list-inline a{
+	color : #AEAEAE;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	padding-bottom: 7px;
+	text-decoration: none;
+}
 
+.menall {
+	border-color: orange;
+}
+.menmake{
+	border-color: blue;
+}
+.menentrep{
+	border-color: red;
+}
 
+.menplay {
+	border-color: green;
+}
+
+.list-inline a:hover {
+	font-size: 99%;
+	color: #8B8B8B;
+	border-top-style: solid;
+	border-top-width: 3px;
+	padding-top: 7px;
+	text-decoration: none;
+}
+.menall:hover {
+	border-color: orange;
+}
+.menmake:hover {
+	border-color: blue;
+}
+.menentrep:hover {
+	border-color: red;
+}
+
+.menplay:hover {
+	border-color: green;
+}
+.list-inline a:focus {
+	color : #AEAEAE;
+	border-top-style: solid;
+	border-top-width: 3px;
+	padding-top: 7px;
+	text-decoration: none;
+	outline: none;
+	
+}
+.menall:focus {
+	border-color: orange;
+}
+.menmake:focus {
+	border-color: blue;
+}
+.menentrep:focus {
+	border-color: red;
+}
+
+.menplay:focus {
+	border-color: green;
+}
 
 /* CONTACT ---------------------------------------------------------------------------------------------------------------------------*/
 
