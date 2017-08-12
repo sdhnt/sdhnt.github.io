@@ -1,280 +1,147 @@
+<!DOCTYPE html>
+<html>
 
-html, body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300;
-  line-height: 1.5;
-}
+<head>
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-size: cover;
-  margin: 0;
+  <title>Sidhant Gupta</title>
+  <meta charset="utf-8" />
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="image/png" href="/Bust.png"/>
+  <link rel="shortcut icon" type="image/png" href="Bust.png"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <header>
+	<div class="col-sm-1">
+	     <div class="dropdown">
+		<button class="dropbtn"><img class="menuimg" src="menbtn.png"></button>
+		 <div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+		</div>
+		</div>
+
+         <h1 class="page-title"><img class="headerimg" src="Signature.png"></h1>
+    </header>
+		<div class="lineone">
+	 <p class="col-sm-12"><br></p>
+	</div>
+	
+			<div class="page-jumbotron"><img class="homepic" src="homepic.jpg">
+			</div>
+			
+				<div class="Projectsmenu">
+				<div class='row'>
+				<div class='col-xs-12 text-center'>
+					<ul class="list-inline" id='category-links'>
+						<li>
+							<a href='#' class='menall' id='menall' onclick="togglevisility('All',event)" >All</a>
+						</li>
+						<li>
+							<a href='#' class='menmake' id='menmake' onclick="togglevisility('make',event)" > Make & Code</a>
+						</li>
+						<li>
+							<a href='#' class='menentrep' id='menentrep' onclick="togglevisility('entrep',event)" >Entrepreneurship</a>
+						</li>
+						<li>
+							<a href='#' class='menplay' id='menplay' onclick="togglevisility('play',event)">Play</a>
+						</li>
+					</ul>
+				</div>
+				</div> <!-- end of link row -->
+				</div>
+				
+				
+				
+				<div id="All">
+					<p>All the content goes here</p>
+				</div>
+				<div id="make" style="display:none;">
+					<p>Make content goes here</p>
+				</div>
+				<div id="entrep" style="display:none;">
+					<p>Entrepreneurship content goes here</p>
+				</div>
+				<div id="play" style="display:none;">
+					<p>Play content goes here</p>
+				</div>
+				
+				
+				
+				
+	 <div class="Professional">
+	 <p class="mainhead"> <b><br> Professional </b> </p>
+
+	</div>
+	<div class="Personal">
+	 <p class="mainhead"> <b><br> Personal </b> </p>
+	</div>
+	
+	 <div class="contact">
+	 <div class="transbox">
+	 <p class="col-sm-12"><br><b>Sidhant Gupta </b> <br>  304, 5th Main, 1st Block, <br> Koramangala, Bangalore - 560034, <br> Karnataka, India. <br> (+91) 9902801600 <br> (+852) 51385925 <br> <br> <b>Reach me at sdhnt@connect.hku.hk <br> <br> </b> </p>
+    </div>
+	</div>
+
+    <footer class="container">
+
+    <div class="row">
+      <p class="col-sm-4">&copy; 2017 Sidhant Gupta </p>
+      <ul class="col-sm-8">
+	  
+        <li class="col-sm-1">
+          <a href="https://facebook.com/sdhntgupta"><img class="footerimg" src="facebook.png"></a>
+        </li>
+		
+        <li class="col-sm-1">
+          <a href="https://instagram.com/sdhnt_gupta"><img class="footerimg" src="instagram.png"></a>
+        </li>
+        <li class="col-sm-1">
+          <a href="https://github.com/sdhnt"><img class="footerimg" src="github.png"></a>
+        </li>
+		<li class="col-sm-1">
+          <a href="https://www.youtube.com/channel/UCvZjxo_4t2AdIUDjXQF6Cbg"><img class="footerimg" src="youtube.png"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   
-  position: relative;
+<script>
+
+var idlast = document.getElementById('All');
+document.getElementById('menall').focus();
+function togglevisility(id,e) {
+
+e.preventDefault();
+    var x = document.getElementById(id);
+	if (x==idlast) {
+	x.style.display = 'block';
+	}
+    else if (x.style.display === 'none') {
+        x.style.display = 'block';
+		idlast.style.display = 'none';
+    } else {
+        x.style.display = 'none';
+    }
+	idlast=x;
 }
 
-/*HEADER     ----------------------------------------------------------------------------------------------------------------------*/
-.page-title {
-  text-align: center;
-  font-weight: 100;
-}
-
-
-.headerimg {
-  max-height: 10%;
-  max-width: 10%;
-}
-
-.menuimg {
-  width: 30px;
-  height: 30px;
-}
-
-.homepicnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.dropbtn {
-    background-color: #ffffff;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
-
-}	
-
-
-
-
-
-.lineone {
-  background-color: #000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*JUMBOTRON     ----------------------------------------------------------------------------------------------------------------------*/
-.page-jumbotron {
-background-image:  url("pat9.png");
-background-size: contain;
-
-
-  text-align: center;
-  font-weight: 100;
-  background-color: #ffffff;	
-}
-
-.homepic {
-padding: 15px;
-
-  max-height: 80%;
-  max-width: 80%;
-}
-
-
-
-
-/*BODYSPCE ----------------------------------------------------------------------------------------------------------------------
-
-.bodyspace {
-  text-align: center;
-  font-weight: 100;
-  background-color: #000000;
-  display: flex;
-  font-size: 12px;
-  color: #ffffff;
-}
-
-
-
-
-
-/*Projectsmenu ----------------------------------------------------------------------------------------------------------------------*/
-
-.list-inline {
-	
-	margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 50px;
-	
-
-	
-}
-
-.list-inline a{
-	color : #AEAEAE;
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	padding-bottom: 7px;
-	text-decoration: none;
-}
-
-.menall {
-	border-color: orange;
-}
-.menmake{
-	border-color: blue;
-}
-.menentrep{
-	border-color: red;
-}
-
-.menplay {
-	border-color: green;
-}
-
-.list-inline a:hover {
-	font-size: 99%;
-	color: #8B8B8B;
-	border-top-style: solid;
-	border-top-width: 3px;
-	padding-top: 7px;
-	text-decoration: none;
-}
-.menall:hover {
-	border-color: orange;
-}
-.menmake:hover {
-	border-color: blue;
-}
-.menentrep:hover {
-	border-color: red;
-}
-
-.menplay:hover {
-	border-color: green;
-}
-.list-inline a:focus {
-	color : #AEAEAE;
-	border-top-style: solid;
-	border-top-width: 3px;
-	padding-top: 7px;
-	text-decoration: none;
-	outline: none;
-	
-}
-.menall:focus {
-	border-color: orange;
-}
-.menmake:focus {
-	border-color: blue;
-}
-.menentrep:focus {
-	border-color: red;
-}
-
-.menplay:focus {
-	border-color: green;
-}
-
-/* CONTACT ---------------------------------------------------------------------------------------------------------------------------*/
-
-.contact {
-  text-align: center;
-  justify-content: center;
-  font-weight: 100;
-  color: #000000;
-
- /*  background-color: #215348;	
-*/
-background-image:  url("indian-patterns.gif");
-background-size: contain;
-  display: flex;
-  font-size: 12px;
-  color: #ffffff;
-}
-.transbox {
-	opacity: 0.85;
-    filter: alpha(opacity=85);
-}
-.contact p{
-	margin-top: 10px;
-	color: #000000;
-	background-color:#ffffff;
-
-}
-
-
-/* FOOTER NAVIGATION ---------------------------------------------------------------------------------------------------------------------------*/
-
-footer .row {
-	margin: 20;
-  display: flex;
-  align-items: center;
-}
-
-
-footer {
-  font-size: 12px;
-  padding: 20px 0;
-}
-
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer ul {
-  list-style: none;
-}
-
-footer li img {
-  width: 32px;
-  height: 32px;
-}
-
+</script>
+  </body>
+</html>
+
+<!-- 
+
+ns-1043.awsdns-02.org. 
+ns-2033.awsdns-62.co.uk. 
+ns-787.awsdns-34.net. 
+ns-280.awsdns-35.com.
+	-->  
