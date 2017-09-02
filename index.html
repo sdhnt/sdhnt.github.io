@@ -243,21 +243,14 @@
   </footer>
 
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
 <script type="text/javascript">
 
-$(function(){
-	var contentprof = $("#contentprof");
-	var contentpers = $("#contentpers");
-	console.log(contentpers);
-	contentprof.hide();
-	contentpers.hide();
-	
-	var idlast = $("#All");
+	var idlast = document.getElementById("All");
 	$('#menall').focus();
+	
 	function togglevisility(id,e) {
-
 	e.preventDefault();
 		var x = document.getElementById(id);
 		if (x==idlast) {
@@ -271,6 +264,20 @@ $(function(){
 		}
 		idlast=x;
 	}
+</script>
+
+
+
+<script>
+
+$(function(){
+	var contentprof = $("#contentprof");
+	var contentpers = $("#contentpers");
+	console.log(contentpers);
+	contentprof.hide();
+	contentpers.hide();
+	
+
 
 	function showcontentprof() {
 		contentprof.toggle();
