@@ -191,6 +191,63 @@ section .row img {
   background-color: #f1f1f1;
 }
 
+
+/* Personal and Professional ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+.Professional p {
+	text-align: center;
+	color: #8B8B8B;
+	margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.Professional img {
+	width: 50vw;
+}
+.Personal img {
+	width: 50vw;
+}
+.mainhead{
+	
+	text-align: center;
+}
+.mainhead img{
+	
+	width: 25vw;
+	
+}
+
+.Personal img{
+	padding: 2vw;
+}
+
+.Professional img{
+	padding: 2vw;
+}
+.Personal p {
+	text-align: center;
+	color: #8B8B8B;
+	margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.projpics .row .col-md-4 {
+  margin: 0 0 30px;
+  background-color: #f1f1f1;
+}
+
+
+
 /* Media ---------------------------------------------------------------------------------------------------------------------------*/
 .mainheadmedia{
 	
