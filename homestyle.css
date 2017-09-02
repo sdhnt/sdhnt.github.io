@@ -205,10 +205,10 @@ section .row img {
 }
 
 .Professional img {
-	width: 50vw;
+	width: 80%;
 }
 .Personal img {
-	width: 50vw;
+	width: 80%;
 }
 .mainhead{
 	
@@ -216,16 +216,16 @@ section .row img {
 }
 .mainhead img{
 	
-	width: 25vw;
+	width: 50%;
 	
 }
 
 .Personal img{
-	padding: 2vw;
+	padding: 15px;;
 }
 
 .Professional img{
-	padding: 2vw;
+	padding: 15px;
 }
 .Personal p {
 	text-align: center;
