@@ -10,6 +10,7 @@ body {
   font-family: 'Lato', sans-serif;
   background-size: cover;
   margin: 0;
+  text-decoration: none;
   
   position: relative;
 }
@@ -161,6 +162,9 @@ padding: 15px;
 .menall:focus {
 	border-color: orange;
 }
+.menmain:focus {
+  border-color: silver;
+}
 .menmake:focus {
 	border-color: blue;
 }
@@ -172,6 +176,30 @@ padding: 15px;
 }
 
 /* Projects ---------------------------------------------------------------------------------------------------------------------------*/
+
+.Descripheading {
+font-family: 'Oswald', sans-serif;
+font-size: 2em;
+
+}
+
+.DescripText {
+font-family: 'Lato', sans-serif;
+font-size: 1em;
+color: gray;
+
+}
+.DescripText a{
+color: navy;
+
+}
+
+.DescripSubheading {
+font-family: 'Oswald', sans-serif;
+font-size: 1.3em;
+
+
+}
 
 .projpics .row .col-sm-4  p {
 	font-family: 'Oswald', sans-serif; 
@@ -188,6 +216,7 @@ padding: 15px;
 section .row img {
   margin: 0 0 30px;
   width: 100%;
+  padding: 1.25em;
 }
 
 .projpics .row .col-md-4 {
@@ -200,13 +229,23 @@ section .row img {
 
 
 .Professional p {
-	text-align: center;
+	text-align: left;
+  align-items: center;
 	color: #8B8B8B;
 	margin-top: 5px;
-    text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
 }
+.Professional a{
+
+  color: #3A1995;;
+}
+
+.Personal a{
+
+   color: #3A1995;
+}
+
 
 .Professional img {
 	width: 100%;
@@ -236,10 +275,10 @@ section .row img {
 	text-align: center;
 	color: #8B8B8B;
 	margin-top: 5px;
-    text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
 }
+
 
 section .row img {
   margin: 0 0 30px;
