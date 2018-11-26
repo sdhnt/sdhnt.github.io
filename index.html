@@ -50,13 +50,13 @@
 				<div class='col-xs-12 text-center'>
 					<ul class="list-inline" id='category-links'>
 						<li>
-							<a href='#' class='menmain' id='menmain' onclick="" >Main</a>
+							<a href='#' class='menmain' id='menmain' onclick="" >Major</a>
 						</li>
 						<li>
 							<a href='#' class='menall' id='menall' onclick="" >All</a>
 						</li>
 						<li>
-							<a href='#' class='menmake' id='menmake' onclick="" > Make & Code</a>
+							<a href='#' class='menmake' id='menmake' onclick="" >Make & Code</a>
 						</li>
 						<li>
 							<a href='#' class='menentrep' id='menentrep' onclick="" >Entrepreneurship</a>
@@ -425,7 +425,7 @@ We are using open hardware platforms like the arduino to be able to make this po
         				Why<br>
         			</p>
         			<p class="DescripText">
-        				My parents run a small manufacturing unit outside Bangalore, India and when I was 13, my dad engineered a CNC machine to mill certain component they were manufacturing. I was amazed. This was my first real exposure to practical "robotics" and around this time I also came across the Honda Asimo - pre-Atlas this was the fanciest humanoid robot in the world. I was learning C++ in school and had just bought myself an Arduino and a servo motor off my pocket money. That's when I decided I was going to build a small Asimo with what I had (I couldn't afford larger servo's anyway). That's how the biped came to existance!
+        				My parents run a small manufacturing unit outside Bangalore, India and when I was 13, my dad engineered a CNC machine to mill certain component they were manufacturing. I was amazed. This was my first real exposure to practical "robotics" and around this time I also came across the Honda Asimo - pre-Atlas this was the fanciest humanoid robot in the world. I was learning C++ in school and had just bought myself an Arduino and a servo motor with my pocket money. That's when I decided I was going to build a small Asimo with what I had (I couldn't afford larger servo's anyway). That's how the biped came to existance!
         			</p>
 
 
@@ -1110,7 +1110,7 @@ Near-Future: [Jan-May 2019] I shall be working with <a href="https://www.nationa
         			
    			   </div>
    			   <div class="col-sm-4">
- 			       <p>TV: Model United Nations (2013 and 2014)</p>			
+ 			       <p>TV: Model United Nations (2014)</p>			
         			<a href=https://youtu.be/KX4oTDSHeRQ><img src="https://img.youtube.com/vi/KX4oTDSHeRQ/0.jpg"></a>
 					<iframe src="https://www.youtube.com/embed/KX4oTDSHeRQ" frameborder="0" allowfullscreen></iframe>	
   			    </div>
@@ -1343,6 +1343,7 @@ $(function(){
 	}
 
 	$(".menmain").on("click", function(){
+		hidedescriptions();
 		event.preventDefault();
 		for(var i=0;i<items.length;i++){
 	      if((items[i].getAttribute("id") != 'mainprojects'))
@@ -1357,6 +1358,7 @@ $(function(){
 
 	
 	$(".menmake").on("click", function(){
+		hidedescriptions();
 		event.preventDefault();
 		for(var i=0;i<items.length;i++){
 	      if((items[i].getAttribute("id") != 'makeprojects'))
@@ -1370,6 +1372,7 @@ $(function(){
 	});
 	
 	$(".menentrep").on("click", function(){
+		hidedescriptions();
 		event.preventDefault();
 		for(var i=0;i<items.length;i++){
 	      if((items[i].getAttribute("id") != 'entrepprojects'))
@@ -1382,6 +1385,7 @@ $(function(){
 	
 	});
 	$(".menplay").on("click", function(){
+		hidedescriptions();
 		event.preventDefault();
 		for(var i=0;i<items.length;i++){
 	      if((items[i].getAttribute("id") != 'playprojects'))
@@ -1394,6 +1398,7 @@ $(function(){
 	
 	});
 	$(".menall").on("click", function(){
+		hidedescriptions();
 		event.preventDefault();
 		for(var i=0;i<items.length;i++){
 			 items[i].style.display="block";
