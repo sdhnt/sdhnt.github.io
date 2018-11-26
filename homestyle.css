@@ -332,10 +332,22 @@ color: #000000;
     font-weight: 300;
     font-size: 20px;
 }
+.Media .row .col-sm-3 {
+    align-content: center;
+}
 
-.col-sm-4 iframe{
+.Media .row .col-sm-3 p{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  align-content: center;
+  color: #000000;
+  margin-top: 3px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.col-sm-3 iframe{
 	height: 100%;
-	width: 100%; 
+	width: 95%; 
 	
 }
 
