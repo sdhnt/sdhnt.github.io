@@ -191,10 +191,11 @@ font-size: 2em;
 
 .DescripText {
 font-family: 'Lato', sans-serif;
-font-size: 1em;
+font-size: 0.9em;
 color: gray;
 
 }
+
 .DescripText a{
 color: navy;
 
