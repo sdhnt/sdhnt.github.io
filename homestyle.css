@@ -16,12 +16,12 @@ body {
 }
 /*HEADER     ----------------------------------------------------------------------------------------------------------------------*/
 .page-title {
-  text-align: center;
+  text-align: right;
   font-weight: 100;
 }
 .headerimg {
-  max-height: 10%;
-  max-width: 10%;
+  max-height: 12%;
+  max-width: 12%;
 }
 .menuimg {
   width: 30px;
@@ -68,22 +68,53 @@ body {
 .lineone {
   background-color: #000000;
 }
+
+
+header .row {
+	margin: 100;
+  display: flex;
+  align-items: center;
+}
+
+header .col-sm-6 {
+  display: flex;
+  justify-content: flex-end;
+}
+header ul {
+  list-style: none;
+}
+header li img {
+  width: 32px;
+  height: 32px;
+}
 /*JUMBOTRON     ----------------------------------------------------------------------------------------------------------------------*/
 .page-jumbotron {
 background-image:  url("pat9.png");
 background-size: contain;
-
-
   text-align: center;
   font-weight: 100;
   background-color: #ffffff;	
 }
 .homepic {
 padding: 15px;
-
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 100%;
+  max-width: 100%;
 }
+.blankt{
+  padding: 15px;
+  margin: 15px;
+  border-color: black;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #8B8B8B;
+}
+
+.blankt p{
+  padding-top: 15px;
+}
+
 /*BODYSPCE ----------------------------------------------------------------------------------------------------------------------
 
 .bodyspace {
@@ -127,9 +158,13 @@ padding: 15px;
 .menentrep{
 	border-color: red;
 }
+.mentech{
+	border-color: purple;
+}
 .menplay {
 	border-color: green;
 }
+
 .list-inline a:hover {
 	font-size: 99%;
 	color: #8B8B8B;
@@ -149,6 +184,9 @@ padding: 15px;
 }
 .menplay:hover {
 	border-color: green;
+}
+.mentech:hover{
+	border-color: purple;
 }
 .list-inline a:focus {
 	color : #AEAEAE;
@@ -307,11 +345,11 @@ font-size: 50px;
 color: #000000;
 
 }
-.mainbodymedia{
+/* .mainbodymedia{
 	
 
 
-}
+} */
 .Media{
 	background-color: #ffffff;
 	padding: 15px;
